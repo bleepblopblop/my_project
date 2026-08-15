@@ -29,7 +29,7 @@ jobs:
           cargo binstall trunk --no-confirm
 
       - name: Build
-        run: trunk build --release --public-url /
+        run: trunk build --release --public-url /my-project
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
