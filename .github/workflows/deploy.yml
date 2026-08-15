@@ -24,7 +24,9 @@ jobs:
           targets: wasm32-unknown-unknown
 
       - name: Install Trunk
-        run: cargo install trunk
+        run: |
+          cargo install cargo-binstall
+          cargo binstall trunk --no-confirm
 
       - name: Build
         run: trunk build --release --public-url /
