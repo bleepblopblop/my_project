@@ -46,6 +46,8 @@ jobs:
       #     cargo install cargo-binstall
       #     cargo binstall trunk --no-confirm
 
+      #idk
+
       - name: Build
         run: trunk build --release --public-url /my_project
 
